@@ -11,6 +11,6 @@
 1. Git Basic [click here](https://git-scm.com/book/en/v1/Git-Basics)
 
 # Installation
-1. `git clone https://github.com/CodeMuddle/jquery-sample-examples.git`
-2. `cd jquery-sample-examples`
-3. `live-server`
+```git clone https://github.com/CodeMuddle/jquery-sample-examples.git`
+cd jquery-sample-examples`
+live-server```
