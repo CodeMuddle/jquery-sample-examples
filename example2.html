@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title of the page</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		// write your code here
+
+	});
+	</script>
+</head>
+<body class="body-style-1">
+	<div class="container">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Brand</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+						<li><a href="#">Link</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">One more separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+	</div>
+	<div class="container">
+		<ul class="list-group">
+			<h1>Task in hand</h1>
+			<li class="list-group-item">li click only for navigation</li>
+			<li class="list-group-item">li click should have active class. All the other li should have empty class</li>
+			<li class="list-group-item">on click li with class dropdown you should avoid adding class li</li>
+			<li class="list-group-item">on click li inside class dropdown you should add li to both li and dropdown</li>
+		</ul>
+		<button type="button" class="hint-button">Show Hint</button>
+		<ul class="list-group hint hide">
+			<li class="list-group-item">To get current element amongst several elements in selector in click event use <code>$(this)</code> </li>
+			<li class="list-group-item">To add class, use jquery manipulation <code>.addClass("<i><b>class-name</b></i>")</code></li>
+			<li class="list-group-item">For checking if class exist, use jquery manipulation <code>.has(<i><b>selector</b></i>}")</code></li>
+			<li class="list-group-item">For getting parents of current element use, <code>.parents()</code> </li>
+			<li class="list-group-item">For filtering including current elements use <code>.filter()</code> </li>
+		</ul>
+	</div>
+</body>
+</html>
