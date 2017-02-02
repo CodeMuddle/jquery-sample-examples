@@ -13,4 +13,4 @@
 # Installation
 1. `git clone https://github.com/CodeMuddle/jquery-sample-examples.git`
 2. `cd jquery-sample-examples`
-3. `live-server`
+3. `live-server .`
