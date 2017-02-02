@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title of the page</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('li.li-selector').on('click',function() {
+			// write your code here
+		});
+	});
+	</script>
+</head>
+<body class="body-style-1">
+	<div class="container">
+		<ul class="list-group li-selector">
+			<li class="list-group-item">li 1</li>
+			<li class="list-group-item">li 2</li>
+			<li class="list-group-item">li 3</li>
+			<li class="list-group-item">li 4</li>
+			<li class="list-group-item">li 5</li>
+		</ul>
+		<ul class="list-group">
+			<h1>Task in hand</h1>
+			<li class="list-group-item">on Clicking li add class active</li>
+			<li class="list-group-item">use <code>$(this)</code> to get clicked li element</li>
+			<li class="list-group-item">on click li with class dropdown you should avoid adding class li</li>
+			<li class="list-group-item">on click li inside class dropdown you should add li to both li and dropdown</li>
+		</ul>
+		<button type="button" class="hint-button">Show Hint</button>
+		<ul class="list-group hint hide">
+			<li class="list-group-item">To add class, use jquery manipulation <code>.addClass("<i><b>class-name</b></i>")</code></li>
+			<li class="list-group-item">To add and remove class periodically, use jquery manipulation <code>.toggleClass("<i><b>class-name</b></i>")</code></li>
+		</ul>
+	</div>
+</body>
+</html>
