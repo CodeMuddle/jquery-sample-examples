@@ -72,5 +72,17 @@
 			<li class="list-group-item">Starts with 0 so its an even</li>
 		</ul>
 	</div>
+
+
+	  <script>
+    $(document).ready(function(){
+      $('tr:even').css('background','#add8e4');
+      $('tr:odd').css('background','#00db00');
+      $('tr:nth-child(5n)').css('background','#fb3c3c');
+      $('tr:nth-child(7n)').css('background','#9f1b1b');
+    });
+  </script>
+
+
 </body>
 </html>
