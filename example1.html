@@ -37,5 +37,15 @@
 			<li class="list-group-item">To add and remove class periodically, use jquery manipulation <code>.toggleClass("<i><b>class-name</b></i>")</code></li>
 		</ul>
 	</div>
+
+	<script>
+	$(document).ready(function(){
+		// var ul_liSelector = 'ul.li-selector li';
+		$("ul.li-selector li").on('click',function(){
+			$("ul.li-selector li").removeClass("active");
+			$(this).toggleClass("active");
+		});
+	});
+	</script>
 </body>
 </html>
