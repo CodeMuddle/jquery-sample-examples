@@ -8,9 +8,18 @@
 	<script type="text/javascript" src="app.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
-		// write your code here
 
+		$('ul.navbar-nav li:not(.dropdown)').on('click',function(event){
+			event.preventDefault(); //preventDefault doesn't display unwanted #
+			event.stopPropagation();  //prevents any parent handlers from being notified about the event
+			$('ul.navbar-nav li').removeClass('active');
+			$(this).addClass('active');
+			if($(this).closest('ul.navbar-nav').has('li.dropdown')){
+				$(this).parents('li.dropdown').addClass('active');
+			}
+		});
 	});
+
 	</script>
 </head>
 <body class="body-style-1">
@@ -68,4 +77,5 @@
 		</ul>
 	</div>
 </body>
+
 </html>
